@@ -59,14 +59,12 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cancro/proprietary/vendor/firmware/wcnss.b08:$(TARGET_COPY_OUT_VENDOR)/firmware/wcnss.b08 \
     vendor/xiaomi/cancro/proprietary/vendor/firmware/wcnss.b09:$(TARGET_COPY_OUT_VENDOR)/firmware/wcnss.b09 \
     vendor/xiaomi/cancro/proprietary/vendor/firmware/wcnss.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/wcnss.mdt \
-    vendor/xiaomi/cancro/proprietary/vendor/etc/people_gender.dat:$(TARGET_COPY_OUT_VENDOR)/etc/people_gender.dat \
     vendor/xiaomi/cancro/proprietary/vendor/etc/permissions/qcnvitems.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/qcnvitems.xml \
     vendor/xiaomi/cancro/proprietary/vendor/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/qcrilhook.xml \
     vendor/xiaomi/cancro/proprietary/vendor/etc/sdm_200_HOG3x3_Grid3x3_bin5_noproj_zero_reduced.bin:$(TARGET_COPY_OUT_VENDOR)/etc/sdm_200_HOG3x3_Grid3x3_bin5_noproj_zero_reduced.bin \
     vendor/xiaomi/cancro/proprietary/vendor/etc/sdm_200_HOG3x3_Grid3x3_bin5_noproj_zero_reduced.bin.pca:$(TARGET_COPY_OUT_VENDOR)/etc/sdm_200_HOG3x3_Grid3x3_bin5_noproj_zero_reduced.bin.pca \
     vendor/xiaomi/cancro/proprietary/vendor/etc/sensor_def_qcomdev.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensor_def_qcomdev.conf \
     vendor/xiaomi/cancro/proprietary/vendor/etc/sensor_diag.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/sensor_diag.cfg \
-    vendor/xiaomi/cancro/proprietary/vendor/etc/watermark_font_2300_3199.dat:$(TARGET_COPY_OUT_VENDOR)/etc/watermark_font_2300_3199.dat \
     vendor/xiaomi/cancro/proprietary/vendor/framework/qcnvitems.jar:$(TARGET_COPY_OUT_VENDOR)/framework/qcnvitems.jar \
     vendor/xiaomi/cancro/proprietary/vendor/framework/qcrilhook.jar:$(TARGET_COPY_OUT_VENDOR)/framework/qcrilhook.jar \
     vendor/xiaomi/cancro/proprietary/vendor/framework/qti-telephony-common.jar:$(TARGET_COPY_OUT_VENDOR)/framework/qti-telephony-common.jar \
