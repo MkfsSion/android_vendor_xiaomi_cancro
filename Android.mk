@@ -1,4 +1,5 @@
-# Copyright (C) 2018 The LineageOS Project
+# Copyright (C) 2015-2016 The CyanogenMod Project
+# Copyright (C) 2017-2018 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -22,17 +23,6 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := libmdmdetect
 LOCAL_MODULE_OWNER := xiaomi
 LOCAL_SRC_FILES := proprietary/vendor/lib/libmdmdetect.so
-LOCAL_MULTILIB := 32
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_SUFFIX := .so
-LOCAL_VENDOR_MODULE := true
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := libqminvapi
-LOCAL_MODULE_OWNER := xiaomi
-LOCAL_SRC_FILES := proprietary/vendor/lib/libqminvapi.so
 LOCAL_MULTILIB := 32
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
@@ -140,6 +130,18 @@ LOCAL_VENDOR_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := qcrilmsgtunnel
+LOCAL_MODULE_OWNER := xiaomi
+LOCAL_SRC_FILES := proprietary/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_PRIVILEGED_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := TimeService
 LOCAL_MODULE_OWNER := xiaomi
 LOCAL_SRC_FILES := proprietary/vendor/app/TimeService/TimeService.apk
@@ -161,18 +163,6 @@ LOCAL_MODULE_CLASS := APPS
 LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_SUFFIX := .apk
 LOCAL_VENDOR_MODULE := true
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := qcrilmsgtunnel
-LOCAL_MODULE_OWNER := xiaomi
-LOCAL_SRC_FILES := proprietary/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_PRIVILEGED_MODULE := true
 include $(BUILD_PREBUILT)
 
 endif

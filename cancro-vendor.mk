@@ -1,4 +1,5 @@
-# Copyright (C) 2018 The LineageOS Project
+# Copyright (C) 2015-2016 The CyanogenMod Project
+# Copyright (C) 2017-2018 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -61,8 +62,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cancro/proprietary/vendor/firmware/wcnss.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/wcnss.mdt \
     vendor/xiaomi/cancro/proprietary/vendor/etc/permissions/qcnvitems.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/qcnvitems.xml \
     vendor/xiaomi/cancro/proprietary/vendor/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/qcrilhook.xml \
-    vendor/xiaomi/cancro/proprietary/vendor/etc/sdm_200_HOG3x3_Grid3x3_bin5_noproj_zero_reduced.bin:$(TARGET_COPY_OUT_VENDOR)/etc/sdm_200_HOG3x3_Grid3x3_bin5_noproj_zero_reduced.bin \
     vendor/xiaomi/cancro/proprietary/vendor/etc/sdm_200_HOG3x3_Grid3x3_bin5_noproj_zero_reduced.bin.pca:$(TARGET_COPY_OUT_VENDOR)/etc/sdm_200_HOG3x3_Grid3x3_bin5_noproj_zero_reduced.bin.pca \
+    vendor/xiaomi/cancro/proprietary/vendor/etc/sdm_200_HOG3x3_Grid3x3_bin5_noproj_zero_reduced.bin:$(TARGET_COPY_OUT_VENDOR)/etc/sdm_200_HOG3x3_Grid3x3_bin5_noproj_zero_reduced.bin \
     vendor/xiaomi/cancro/proprietary/vendor/etc/sensor_def_qcomdev.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensor_def_qcomdev.conf \
     vendor/xiaomi/cancro/proprietary/vendor/etc/sensor_diag.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/sensor_diag.cfg \
     vendor/xiaomi/cancro/proprietary/vendor/framework/qcnvitems.jar:$(TARGET_COPY_OUT_VENDOR)/framework/qcnvitems.jar \
@@ -82,12 +83,14 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cancro/proprietary/vendor/lib/libchromatix_imx226_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx226_liveshot.so \
     vendor/xiaomi/cancro/proprietary/vendor/lib/libchromatix_s5k3m2_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3m2_liveshot.so \
     vendor/xiaomi/cancro/proprietary/vendor/lib/libloc_api_v02.so:$(TARGET_COPY_OUT_VENDOR)/lib/libloc_api_v02.so \
+    vendor/xiaomi/cancro/proprietary/vendor/lib/libqminvapi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqminvapi.so \
     vendor/xiaomi/cancro/proprietary/vendor/lib/rfsa/adsp/libapps_mem_heap.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libapps_mem_heap.so \
     vendor/xiaomi/cancro/proprietary/vendor/lib/rfsa/adsp/libdspCV_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libdspCV_skel.so \
     vendor/xiaomi/cancro/proprietary/vendor/lib/rfsa/adsp/libfastcvadsp.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libfastcvadsp.so \
     vendor/xiaomi/cancro/proprietary/vendor/lib/rfsa/adsp/libfastcvadsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libfastcvadsp_skel.so \
     vendor/xiaomi/cancro/proprietary/vendor/lib/rfsa/adsp/libscveT2T_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libscveT2T_skel.so \
     vendor/xiaomi/cancro/proprietary/vendor/lib/soundfx/libdirac.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libdirac.so \
+    vendor/xiaomi/cancro/proprietary/vendor/bin/thermal-engine:$(TARGET_COPY_OUT_VENDOR)/bin/thermal-engine \
     vendor/xiaomi/cancro/proprietary/vendor/firmware/bcm2079x-b5_firmware.ncd:$(TARGET_COPY_OUT_VENDOR)/firmware/bcm2079x-b5_firmware.ncd \
     vendor/xiaomi/cancro/proprietary/vendor/firmware/bcm2079x-b5_pre_firmware.ncd:$(TARGET_COPY_OUT_VENDOR)/firmware/bcm2079x-b5_pre_firmware.ncd \
     vendor/xiaomi/cancro/proprietary/vendor/firmware/keymaster/keymaster.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/keymaster/keymaster.b00 \
@@ -460,19 +463,17 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cancro/proprietary/vendor/lib/libssd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libssd.so \
     vendor/xiaomi/cancro/proprietary/vendor/lib/libsystem_health_mon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsystem_health_mon.so \
     vendor/xiaomi/cancro/proprietary/vendor/lib/libt2tmanager.so:$(TARGET_COPY_OUT_VENDOR)/lib/libt2tmanager.so \
+    vendor/xiaomi/cancro/proprietary/vendor/lib/libthermalclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libthermalclient.so \
+    vendor/xiaomi/cancro/proprietary/vendor/lib/libthermalioctl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libthermalioctl.so \
     vendor/xiaomi/cancro/proprietary/vendor/lib/libubifocus.so:$(TARGET_COPY_OUT_VENDOR)/lib/libubifocus.so \
     vendor/xiaomi/cancro/proprietary/vendor/lib/libxml.so:$(TARGET_COPY_OUT_VENDOR)/lib/libxml.so \
     vendor/xiaomi/cancro/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_VENDOR)/lib/mediadrm/libwvdrmengine.so \
     vendor/xiaomi/cancro/proprietary/vendor/lib/soundfx/libqcbassboost.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcbassboost.so \
     vendor/xiaomi/cancro/proprietary/vendor/lib/soundfx/libqcreverb.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcreverb.so \
     vendor/xiaomi/cancro/proprietary/vendor/lib/soundfx/libqcvirt.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcvirt.so \
-    vendor/xiaomi/cancro/proprietary/vendor/qcril.db:$(TARGET_COPY_OUT_VENDOR)/qcril.db \
-    vendor/xiaomi/cancro/proprietary/vendor/bin/thermal-engine:$(TARGET_COPY_OUT_VENDOR)/bin/thermal-engine \
-    vendor/xiaomi/cancro/proprietary/vendor/lib/libthermalclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libthermalclient.so \
-    vendor/xiaomi/cancro/proprietary/vendor/lib/libthermalioctl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libthermalioctl.so
+    vendor/xiaomi/cancro/proprietary/vendor/qcril.db:$(TARGET_COPY_OUT_VENDOR)/qcril.db
 
 PRODUCT_PACKAGES += \
-    libqminvapi \
     libmdmdetect \
     libTimeService \
     libdiag \
@@ -483,6 +484,6 @@ PRODUCT_PACKAGES += \
     libqmi_client_qmux \
     libqmiservices \
     libtime_genoff \
+    qcrilmsgtunnel \
     TimeService \
-    shutdownlistener \
-    qcrilmsgtunnel
+    shutdownlistener
